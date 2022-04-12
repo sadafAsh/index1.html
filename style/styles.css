@@ -1,0 +1,270 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.navbar{
+    display: flex;
+    background-color: rgb(159, 173, 218);
+   position: sticky;
+   cursor: pointer;
+   top: 0;
+   /* height: 500px; */
+}
+.navlist{
+    width: 70%;
+    display: flex;
+    
+}
+.logo{
+    width: 17%;
+padding-left: 25px;
+    margin: 9px 33px;
+}
+.logo img{
+    width: 45%;
+    border: 2px solid grey;
+    border-radius: 48px;
+}
+.rightNav{
+    /* background-color: yellow; */
+    width: 30%;
+    text-align: right;
+    padding: 27px 3px;
+}
+.burger{
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 21px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+.navlist li{
+    text-align: center;
+    display: flex;
+    list-style-type: none;
+    padding: 25px 24px;
+}
+.navlist li a{
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+    
+}
+.navlist li a:hover{
+    text-decoration: none;
+    color: white;
+}
+.background{
+background: rgba(0, 0, 0, 0.7) url('../img/sunset.jpg');
+background-size: cover;
+background-blend-mode: difference;
+}
+#search{
+    border: 2px solid dimgrey;
+    border-radius: 3px;
+    padding: 2px 8px;
+    font-size: 17px;
+}
+.btn{   
+     margin: 4px 6px;
+    font-size: 16px;
+    border: 2px solid dimgrey;
+    border-radius: 5px;
+}
+.box-main{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: auto;
+    padding: 100px;
+    
+}
+.firstHalf{
+     width: 89%;
+ display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+.text-small{
+     font-size: 77px;
+    font-style: italic; 
+    align-items: center;
+    justify-content: center;
+    padding: 13px 34px;
+
+
+    
+}
+.text-big{
+     font-size: 20px;
+    font-style: oblique;
+    color: ghostwhite; 
+}
+.buttons{
+text-align: center;
+padding: 20px;
+}
+.secondHalf{
+     width: 40%;
+     align-items: center;
+     padding: 4px; 
+ }
+.secondHalf img {
+    width: 43%;
+    border: 2px solid black;
+    border-radius: 129px; 
+
+} 
+.btn-sm{
+    vertical-align: middle;
+}
+.firstSection{
+    height: 100vh;
+}
+.secRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width:80%;
+    padding: 47px;
+}
+.secLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: white;
+    max-width:80%;
+    padding: 47px;
+    flex-direction: row-reverse;
+}
+.paras{
+    width: 60%;
+    padding: 0 40px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.sectionTag{
+    font-size: 42px;
+}
+.sectionSubTag{
+    font-size: 17px;
+color: black;
+}
+.thumbnail{
+    /* padding: 24px 5px; */
+    align-items: center;
+    width: 35%;
+}
+.imgFluid {
+    width: 98%;
+    display: flex;
+    border: 2px solid grey;
+    border-radius: 35px;
+}
+.contact{
+    
+    background-color: rgb(194, 152, 152);
+    height: 164vh;
+}
+.text-center{
+    
+    text-align: center;
+}
+.form{
+   
+    max-width: 62%;
+    margin: 40px auto;
+}
+.btn-dark{
+    margin: 0px 250px;
+}
+.text-footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+
+.form-input{
+    width: 100%;
+    padding: 1px;
+    font-size: 18px;
+    border: 2px solid dimgrey;
+    border-radius: 4px;
+    margin: 18px 0px;
+}
+@media only screen and (max-width: 1029px) {
+    .navlist{
+        flex-direction: column;
+        margin: auto 60px;
+        padding: 25px 57px;
+    }
+    
+    .navbar{
+        flex-direction: column;
+        transition: all 1.0s ease-out;
+        height: 500px;
+    }
+    .logo{
+    
+        margin: 11px 7px;
+    }
+    .rightNav{
+        
+            margin: auto 60px;
+            width: 30%;
+            padding: 12px 52px;
+            text-align: center;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+        height: 20px;
+        padding: 290px 49px;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+        right: 15%;
+        top: 61px;
+    }
+    .firstSection{
+        height: 140vh;
+    }
+    .h-nav-resp{
+        height: 149px;
+    }
+    .v-class-resp{
+        visibility: hidden;
+    }
+    .secRight{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .secLeft{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    
+    
+    .btn-dark{
+        margin: 8px 51px;
+        padding: 4px;
+    }
+    
+    .contact{
+        padding: 26px;
+    }
+}
